@@ -24,7 +24,6 @@ const AdminDashboardPage = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    window.location.reload();
     fetchDashboardData();
   }, []);
 

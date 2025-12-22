@@ -98,6 +98,7 @@ const RegisterPage = () => {
       const { token, user } = response.data;
       
       login(token, user);
+      alert("registration is successfull");
       navigate('/registration');
     } catch (error) {
       if (error.response?.data?.message) {
