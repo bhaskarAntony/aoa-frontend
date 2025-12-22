@@ -166,7 +166,7 @@ const Header = () => {
                  
                 </Link>
              <Link
-             to="/registration"
+             to="/register-details"
                   className="flex items-center gap-2 px-6 py-3 text-sm font-medium text-white  border-b-2 border-transparent transition-colors duration-200 relative"
                 >
                   <User className="w-4 h-4 text-white hover:text-yellow-900 transition-colors" />
