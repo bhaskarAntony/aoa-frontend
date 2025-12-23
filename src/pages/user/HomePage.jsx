@@ -177,34 +177,31 @@ const HomePage = () => {
             </h2>
             <div className="space-y-3 text-sm text-slate-700 leading-relaxed">
               <p>
-                It gives great pleasure to welcome you to the 19th Annual Conference of Obstetric
-                Anaesthesiologists, hosted by the Department of Anaesthesiology, SIMS, and the ISA
-                City Chapter, Shivamogga. The conference will be held at Shimoga Institute of
-                Medical Sciences in the culturally rich city that forms the gateway to the Western
-                Ghats.
+                It gives us great pleasure to welcome you to the 19th Annual Conference of Obstetric Anaesthesiologists, proudly hosted by the Department of Anaesthesiology,SIMS and the ISA City Chapter, Shivamogga. The conference will be held at the Shimoga Institute of Medical Sciences, located in the serene , culturally rich city and gateway of western ghats  Shivamogga, Karnataka.
               </p>
               <p>
-                Despite advances, gaps persist between urban and rural perioperative maternal care,
-                contributing significantly to maternal mortality in India. The meeting focuses on
-                delivering equitable, evidence‑based, and safe obstetric anaesthesia across all
-                levels of healthcare.
+                It is concerning to our fraternity that despite the advances in medical field, there exists a significant gap between urban and rural perioperative maternal care contributing to maternal deaths in India
+              This  year's theme highlights the vital need to ensure equitable,evidence based and safe obstetric anaesthesia services across diverse health care settings. This prestigious gathering brings together experts, practitioners, and learners in the field of obstetric anaesthesia to share knowledge, discuss advances, and explore innovations that continue to shape safe motherhood and perioperative care and address the challenges faced in both resource rich and resouce limited environments. The conference promises a vibrant academic program featuring distinguished speakers, interactive sessions, hands-on workshops, and opportunities to engage with peers from across the region and beyond.
               </p>
               <p>
-                AOACON 2026 brings together experts, practitioners, and learners to share
-                knowledge, discuss advances, and explore innovations that shape safe motherhood in
-                both resource‑rich and resource‑limited environments. Expect distinguished
-                speakers, interactive discussions, skills labs, and meaningful networking.
+                Set amidst the lush landscapes of Karnataka, Shivamogga offers perfect backdrop for academic exchange and rejuvenation.
               </p>
               <p>
-                Amidst the lush landscapes of Karnataka, Shivamogga offers a balance of academic
-                intensity and natural rejuvenation. Join the effort to narrow the urban–rural gap
-                and support safe motherhood everywhere.
+                We warmly invite you to join us in Shivamogga for an enriching scientific experience amidst a welcoming environment. Together, let us work towards narrowing urban-rural gap and shaping safe motherhood everywhere 
               </p>
               <p className="font-semibold text-slate-900">
+                <br/>
                 We look forward to your participation.
                 <br />
                 <span className="font-normal text-slate-700">
-                  Organising Committee, AOACON 2026
+                  Regards,
+                  <br />
+                  The
+                  Organizing committee
+                  <br />
+                  AOACON 2026
+                  <br />
+                  Department of Anaesthesiology, Shimoga Institute of Medical Sciences (SIMS) and ISA City Chapter, Shivamogga
                 </span>
               </p>
             </div>
