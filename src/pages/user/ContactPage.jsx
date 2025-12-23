@@ -56,7 +56,7 @@ const ContactPage = () => {
         </section>
 
         {}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-6">
+        <section className="grid grid-cols-1 gap-5 mb-6">
           {}
           <div className="rounded-2xl border border-emerald-200 bg-emerald-50/80 px-4 sm:px-5 py-5 space-y-4 shadow-sm">
             <div className="flex items-center justify-between gap-2">
@@ -82,54 +82,13 @@ const ContactPage = () => {
             </div>
 
             {}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-800">
-              <div className="rounded-xl bg-white/90 border border-emerald-100 px-3 py-3 space-y-2">
-                <div>
-                  <p className="font-semibold text-slate-900">Prof. (Dr.) Swagata Tripathy</p>
-                  <p className="text-[12px] text-slate-600">(Organising Chairperson)</p>
-                  <p className="flex items-center gap-1 mt-0.5">
-                    <Phone className="w-3.5 h-3.5 text-slate-500" />
-                    8763400534
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-slate-900">Prof. (Dr.) Neha Singh</p>
-                  <p className="text-[12px] text-slate-600">(Organising Secretary)</p>
-                  <p className="flex items-center gap-1 mt-0.5">
-                    <Phone className="w-3.5 h-3.5 text-slate-500" />
-                    9438884045
-                  </p>
-                </div>
-              </div>
-
-              <div className="rounded-xl bg-white/90 border border-emerald-100 px-3 py-3 space-y-2">
-                <div>
-                  <p className="font-semibold text-slate-900">Dr. Aparajita Panda</p>
-                  <p className="text-[12px] text-slate-600">(Jt. Organising Secretary)</p>
-                  <p className="flex items-center gap-1 mt-0.5">
-                    <Phone className="w-3.5 h-3.5 text-slate-500" />
-                    9438884118
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-slate-900">Dr. Soumya Samal</p>
-                  <p className="text-[12px] text-slate-600">(Jt. Organising Secretary)</p>
-                  <p className="flex items-center gap-1 mt-0.5">
-                    <Phone className="w-3.5 h-3.5 text-slate-500" />
-                    7978041867
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {}
             <div className="grid grid-cols-1 sm:grid-cols-[1.4fr_1fr] gap-3 text-sm text-slate-800">
               <div className="rounded-xl bg-white/90 border border-emerald-100 px-3 py-3">
-                <p className="font-semibold text-slate-900">Dr. Sritam Swarup Jena</p>
-                <p className="text-[12px] text-slate-600">(Treasurer)</p>
+                <p className="font-semibold text-slate-900">Dr. Champa</p>
+                <p className="text-[12px] text-slate-600">(Organising Secretary)</p>
                 <p className="flex items-center gap-1 mt-0.5">
                   <Phone className="w-3.5 h-3.5 text-slate-500" />
-                  8951614718
+                  6361912008
                 </p>
               </div>
               <div className="rounded-xl bg-white/90 border border-emerald-100 px-3 py-3">
@@ -137,81 +96,11 @@ const ContactPage = () => {
                 <p className="flex items-center gap-1">
                   <Mail className="w-3.5 h-3.5 text-slate-500" />
                   <a
-                    href="mailto:2025aoa@gmail.com"
-                    className="text-[#005aa9] hover:underline break-all"
+                    href="mailto:regaoacon2026@gmail.com"
+                    className="text-[#005aa9] hover:underline break-words"
                   >
-                    2025aoa@gmail.com
+                    regaoacon2026@gmail.com
                   </a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {}
-          <div className="rounded-2xl border border-amber-200 bg-amber-50/80 px-4 sm:px-5 py-5 space-y-4 shadow-sm">
-            <div className="flex items-center justify-between gap-2">
-              <h2 className="text-base font-semibold text-slate-900 flex items-center gap-2">
-                <Building2 className="w-4 h-4 text-amber-700" />
-                Professional Conference Organizer
-              </h2>
-              <span className="px-2.5 py-1 rounded-full text-[11px] bg-white/80 text-amber-800 border border-amber-200">
-                Meetings n More
-              </span>
-            </div>
-
-            {}
-            <div className="text-sm text-slate-800 space-y-1">
-              <p className="font-semibold text-slate-900">Office Address</p>
-              <p>
-                Unit No. 604, Millennium Plaza, Tower B,
-                <br />
-                Sector 27, Shivamogga, Haryana – 122002, India.
-              </p>
-            </div>
-
-            {}
-            <div className="rounded-xl bg-white/90 border border-amber-100 px-3 py-3 text-sm text-slate-800">
-              <p className="font-semibold text-slate-900">Project Manager</p>
-              <p className="text-slate-900">Ms. Pooja Sharma</p>
-              <p className="flex items-center gap-1 mt-0.5">
-                <Phone className="w-3.5 h-3.5 text-slate-500" /> +91 96274 75770
-              </p>
-              <p className="mt-2 flex items-center gap-1">
-                <Mail className="w-3.5 h-3.5 text-slate-500" />
-                <a
-                  href="mailto:corporate@meetingsnmore.com"
-                  className="text-[#005aa9] hover:underline break-all"
-                >
-                  corporate@meetingsnmore.com
-                </a>
-              </p>
-              <p className="mt-1">
-                Web:{' '}
-                <a
-                  href="https://www.meetingsnmore.com/mnm/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-[#005aa9] hover:underline break-all"
-                >
-                  www.meetingsnmore.com
-                </a>
-              </p>
-            </div>
-
-            {}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-800">
-              <div className="rounded-xl bg-white/90 border border-amber-100 px-3 py-3">
-                <p className="font-semibold text-[13px] text-slate-900">Registration Incharge</p>
-                <p className="font-semibold text-slate-900">Mr. Rohit Kamra</p>
-                <p className="flex items-center gap-1 mt-0.5">
-                  <Phone className="w-3.5 h-3.5 text-slate-500" /> +91 98189 65679
-                </p>
-              </div>
-              <div className="rounded-xl bg-white/90 border border-amber-100 px-3 py-3">
-                <p className="font-semibold text-[13px] text-slate-900">Accommodation Incharge</p>
-                <p className="font-semibold text-slate-900">Mr. Shekhar Dhingra</p>
-                <p className="flex items-center gap-1 mt-0.5">
-                  <Phone className="w-3.5 h-3.5 text-slate-500" /> +91 99535 70019
                 </p>
               </div>
             </div>

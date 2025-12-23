@@ -20,6 +20,9 @@ import VenuePage from './pages/user/VenuePage';
 import ContactPage from './pages/user/ContactPage';
 import HomePage from './pages/user/HomePage';
 import BrochurePage from './pages/user/BrochurePage';
+import TermsPage from './pages/user/TermsPage';
+import CancellationPolicyPage from './pages/user/CancellationPolicyPage';
+import PrivacyPolicyPage from './pages/user/PrivacyPolicyPage';
 import AdminLoginPage from './pages/admin/AdminLoginPage';
 import AdminDashboardPage from './pages/admin/AdminDashboardPage';
 import RegistrationsManagementPage from './pages/admin/RegistrationsManagementPage';
@@ -29,6 +32,7 @@ import AbstractReviewPage from './pages/admin/AbstractReviewPage';
 import FeedbackViewerPage from './pages/admin/FeedbackViewerPage';
 import { useEffect } from 'react';
 import LoadingSpinner from './components/common/LoadingSpinner';
+import Footer from './components/common/Footer';
 
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated, loading } = useAuth();
@@ -102,8 +106,9 @@ function App() {
 
         <Router>
           <ScrollToTop/>
-          <div className="App">
-            <Routes>
+          <div className="App min-h-screen flex flex-col">
+            <div className="flex-1">
+              <Routes>
               {}
               <Route path="/" element={
                   <HomePage />
@@ -127,6 +132,18 @@ function App() {
               
               <Route path="/download" element={
                   <BrochurePage />
+              } />
+
+              <Route path="/terms" element={
+                  <TermsPage />
+              } />
+
+              <Route path="/cancellation-policy" element={
+                  <CancellationPolicyPage />
+              } />
+
+              <Route path="/privacy-policy" element={
+                  <PrivacyPolicyPage />
               } />
               
               <Route path="/register" element={
@@ -241,7 +258,9 @@ function App() {
                   </div>
                 </div>
               } />
-            </Routes>
+              </Routes>
+            </div>
+            <Footer />
           </div>
         </Router>
       </AppProvider>
