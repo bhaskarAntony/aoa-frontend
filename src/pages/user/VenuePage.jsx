@@ -127,7 +127,7 @@ const VenuePage = () => {
           <h2 className="text-base sm:text-lg font-semibold text-slate-900 mb-3">
             Campus
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               'https://secureadmissions.in/wp-content/uploads/2025/06/10980_index_20.gif',
               'https://thecollegesphere.com/wp-content/uploads/2025/09/Shimoga-Institute-of-Medical-Sciences.gif',
@@ -141,7 +141,7 @@ const VenuePage = () => {
                 <img
                   src={src}
                   alt="SIMS campus"
-                  className="w-full h-28 md:h-32 object-cover hover:scale-105 transition-transform"
+                  className="w-full h-48 sm:h-52 lg:h-56 object-cover hover:scale-105 transition-transform"
                   loading="lazy"
                 />
               </div>
@@ -174,7 +174,7 @@ const VenuePage = () => {
               <ul className="space-y-1 mb-3">
                 <li>• Nearest railway stations: Shivamogga Town / Shivamogga Central.</li>
                 <li>• KSRTC bus stand within short driving distance.</li>
-                <li>• Taxis and auto‑rickshaws easily available.</li>
+                <li>• Auto‑rickshaws easily available.</li>
               </ul>
               <p className="font-semibold text-sm mb-1">Local Tips</p>
               <ul className="space-y-1">

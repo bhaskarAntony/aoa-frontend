@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import Header from '../../components/common/Header';
 import MobileNav from '../../components/common/MobileNav';
+import RegistrationFeesSection from '../../components/common/RegistrationFeesSection';
 import logo from '../../images/main-logo.jpg'
 const targetDate = new Date('2026-10-30T09:00:00+05:30');
 
@@ -243,35 +244,24 @@ const HomePage = () => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
               <div className="rounded-xl bg-white border border-emerald-200 px-4 py-3">
-                <p className="font-semibold text-emerald-800 mb-1">
-                  Obstetric Critical Care & Resuscitation
-                </p>
-                <p className="text-slate-700">
-                  Protocol‑driven management of haemorrhage, sepsis, shock, and peri‑arrest
-                  scenarios with simulation‑supported learning.
+                <p className="font-semibold text-emerald-800">
+                  Labour Analgesia (1day) - Dr Bharath &amp; team
                 </p>
               </div>
               <div className="rounded-xl bg-white border border-sky-200 px-4 py-3">
-                <p className="font-semibold text-sky-800 mb-1">Obstetric RA & POCUS</p>
-                <p className="text-slate-700">
-                  Neuraxial techniques, peripheral nerve blocks, and bedside ultrasound for
-                  optimised obstetric anaesthesia and critical care.
+                <p className="font-semibold text-sky-800">
+                  Critical incidents in Obstetric Anaesthesia (1day) – Dr Sandhya &amp; Team
                 </p>
               </div>
               <div className="rounded-xl bg-white border border-amber-200 px-4 py-3">
-                <p className="font-semibold text-amber-800 mb-1">Labour Analgesia</p>
-                <p className="text-slate-700">
-                  Practical epidural strategies, combined techniques, and labour analgesia pathways
-                  tailored to different practice settings.
+                <p className="font-semibold text-amber-800">
+                  POCUS in Obstetric Anaesthesia (1day) - Dr Praveen Kumar &amp; team
                 </p>
               </div>
               <div className="rounded-xl bg-white border border-rose-200 px-4 py-3">
-                <p className="font-semibold text-rose-800 mb-1">
-                  Critical Incidences, Simulation & Nursing Track
-                </p>
-                <p className="text-slate-700">
-                  High‑impact scenarios, crisis resource management, and essential obstetric
-                  emergencies for nurses and allied staff.
+                <p className="font-semibold text-rose-800">
+                  Maternal Collapse&amp; Resuscitation and Obstetric RA blocks (1day) - Dr Vikram
+                  &amp; team
                 </p>
               </div>
             </div>
@@ -280,6 +270,8 @@ const HomePage = () => {
         
         </div>
       </section>
+
+      <RegistrationFeesSection />
 
       {}
       <section className="border-b border-indigo-100 bg-indigo-50/70">

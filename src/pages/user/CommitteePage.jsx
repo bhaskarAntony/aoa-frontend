@@ -220,7 +220,7 @@ const CommitteePage = () => {
     <div className="min-h-screen bg-slate-50">
       <Header />
 
-      <div className="max-w-6xl mx-auto px-3 sm:px-4 lg:px-6 pb-20">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 pb-20">
         {}
         <div className="relative overflow-hidden rounded-3xl mt-4 mb-6">
           <div className="absolute inset-0 bg-gradient-to-r from-[#005aa9] via-sky-700 to-indigo-700 opacity-90" />
@@ -265,43 +265,48 @@ const CommitteePage = () => {
         </div>
 
         {}
-        <div className="mb-4 text-[12px] text-slate-700">
-          <p>
+        <div className="mb-6 rounded-2xl border border-slate-200 bg-white px-5 py-4 text-sm text-slate-700 shadow-sm">
+          <p className="max-w-3xl">
             The conference is supported by dedicated committees overseeing scientific content,
-            hospitality, workshops, cultural events, logistics, and delegate experience. Each section
-            lists the key office bearers and committee members with their designated roles.
+            hospitality, workshops, cultural events, logistics, and delegate experience.
+          </p>
+          <p className="mt-2 max-w-3xl">
+            Each section lists the key office bearers and committee members with their designated roles.
           </p>
         </div>
 
         {}
-        <div className="space-y-6">
+        <div className="space-y-8">
           {committees.map((section) => (
             <section
               key={section.sectionTitle}
-              className={`rounded-2xl border border-slate-200 bg-gradient-to-br ${section.accent} px-4 py-4 sm:px-5 sm:py-5`}
+              className={`rounded-3xl border border-slate-200 bg-gradient-to-br ${section.accent} px-5 py-5 sm:px-6 sm:py-6`}
             >
-              <div className="flex items-center justify-between gap-2 mb-3">
-                <h2 className="text-sm font-semibold text-slate-900 flex items-center gap-2">
-                  <span className="inline-flex w-6 h-6 rounded-xl bg-white/70 text-[#005aa9] items-center justify-center text-[11px]">
-                    <Users className="w-3.5 h-3.5" />
+              <div className="flex items-center justify-between gap-2 mb-4">
+                <h2 className="text-base sm:text-lg font-semibold text-slate-900 flex items-center gap-2">
+                  <span className="inline-flex w-8 h-8 rounded-2xl bg-white/80 text-[#005aa9] items-center justify-center text-[11px] shadow-sm">
+                    <Users className="w-4 h-4" />
                   </span>
                   {section.sectionTitle}
                 </h2>
               </div>
 
               {section.roles.map((roleBlock) => (
-                <div key={roleBlock.role} className="mb-4 last:mb-0">
-                  <p className="text-[11px] font-semibold text-slate-800 mb-2 uppercase tracking-wide">
+                <div
+                  key={roleBlock.role}
+                  className="mb-4 last:mb-0 rounded-2xl border border-slate-200/70 bg-white/85 px-4 py-4"
+                >
+                  <p className="text-xs sm:text-sm font-semibold text-slate-800 mb-3 uppercase tracking-wide">
                     {roleBlock.role}
                   </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {roleBlock.members.map((m) => (
                       <div
                         key={`${roleBlock.role}-${m.name}`}
-                        className="flex items-center gap-3 rounded-2xl bg-white/90 border border-white/70 px-3 py-3 shadow-[0_0_0_1px_rgba(15,23,42,0.02)]"
+                        className="flex items-center gap-4 rounded-2xl bg-white border border-slate-200 px-4 py-4 shadow-sm"
                       >
                         {}
-                        <div className="w-10 h-10 rounded-2xl overflow-hidden ring-2 ring-slate-100 shadow-sm bg-slate-100 flex-shrink-0">
+                        <div className="w-12 h-12 rounded-2xl overflow-hidden ring-2 ring-slate-100 shadow-sm bg-slate-100 flex-shrink-0">
                           <img
                             src={m.image}
                             alt={m.name}
@@ -312,10 +317,10 @@ const CommitteePage = () => {
 
                         {}
                         <div className="min-w-0">
-                          <p className="text-[12px] font-semibold text-slate-900 truncate">
+                          <p className="text-sm font-semibold text-slate-900 truncate">
                             {m.name}
                           </p>
-                          <p className="text-[11px] text-slate-600 truncate">{m.designation}</p>
+                          <p className="text-xs text-slate-600 truncate">{m.designation}</p>
                         </div>
                       </div>
                     ))}
