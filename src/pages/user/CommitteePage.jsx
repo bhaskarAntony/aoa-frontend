@@ -7,7 +7,6 @@ const PLACEHOLDER_IMAGE =
 const committees = [
   {
     sectionTitle: 'Core Organizing Team',
-    accent: 'from-emerald-500/10 to-emerald-500/0',
     roles: [
       {
         role: 'Organizing Chairperson',
@@ -43,7 +42,6 @@ const committees = [
   },
   {
     sectionTitle: 'Scientific Team',
-    accent: 'from-sky-500/10 to-sky-500/0',
     roles: [
       {
         role: 'Scientific Chairpersons',
@@ -85,7 +83,6 @@ const committees = [
   },
   {
     sectionTitle: 'Reception & Registration Team',
-    accent: 'from-amber-500/10 to-amber-500/0',
     roles: [
       {
         role: 'Members',
@@ -102,7 +99,6 @@ const committees = [
   },
   {
     sectionTitle: 'Travel & Accommodation Team',
-    accent: 'from-violet-500/10 to-violet-500/0',
     roles: [
       {
         role: 'Members',
@@ -117,7 +113,6 @@ const committees = [
   },
   {
     sectionTitle: 'Venue Detailing Team',
-    accent: 'from-teal-500/10 to-teal-500/0',
     roles: [
       {
         role: 'Members',
@@ -130,7 +125,6 @@ const committees = [
   },
   {
     sectionTitle: 'Workshops & Courses',
-    accent: 'from-rose-500/10 to-rose-500/0',
     roles: [
       {
         role: 'Workshop Team Members',
@@ -170,7 +164,6 @@ const committees = [
   },
   {
     sectionTitle: 'Food & Banquet Team',
-    accent: 'from-amber-500/10 to-amber-500/0',
     roles: [
       {
         role: 'Members',
@@ -185,7 +178,6 @@ const committees = [
   },
   {
     sectionTitle: 'Cultural Team',
-    accent: 'from-indigo-500/10 to-indigo-500/0',
     roles: [
       {
         role: 'Members',
@@ -200,7 +192,6 @@ const committees = [
   },
   {
     sectionTitle: 'Memento & Kits Team',
-    accent: 'from-fuchsia-500/10 to-fuchsia-500/0',
     roles: [
       {
         role: 'Members',
@@ -216,7 +207,7 @@ const committees = [
 
 const CommitteePage = () => {
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-white">
       <Header />
 
       <div className="max-w-6xl mx-auto px-4 lg:px-6 pb-20">
@@ -273,54 +264,40 @@ const CommitteePage = () => {
         </div>
 
         {}
-        <div className="space-y-6 lg:space-y-8">
+        <div className="space-y-10 lg:space-y-12">
           {committees.map((section) => (
             <section
               key={section.sectionTitle}
-              className={`rounded-2xl border border-slate-200 bg-gradient-to-br ${section.accent} px-6 lg:px-8 py-8 lg:py-12`}
+              className="px-2 sm:px-4"
             >
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 lg:mb-10">
-                <div className="flex items-center gap-4">
-                  <div className="inline-flex w-12 h-12 lg:w-14 lg:h-14 rounded-2xl bg-white/80 text-[#005aa9] items-center justify-center flex-shrink-0">
-                    <Users className="w-6 h-6 lg:w-7 lg:h-7" />
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#0b5f73] text-center mb-8">
+                - {section.sectionTitle} -
+              </h2>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                {section.roles.flatMap((roleBlock) => roleBlock.members).map((m, index) => (
+                  <div
+                    key={`${section.sectionTitle}-${m.name}-${index}`}
+                    className="bg-white rounded-[18px] border border-slate-200 shadow-[0_10px_18px_rgba(0,0,0,0.2)] px-6 py-6 text-center"
+                  >
+                    <div className="mx-auto w-28 h-28 rounded-full border-[2px] border-dotted border-[#8d3c6d] p-1">
+                      <img
+                        src={m.image}
+                        alt={m.name}
+                        className="w-full h-full rounded-full object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <p className="mt-4 text-sm sm:text-lg font-semibold text-[#e11d74]">
+                      {m.name}
+                    </p>
+                    <p className="text-xs sm:text-base font-semibold text-[#3a3a8a]">
+                      {m.designation}
+                    </p>
                   </div>
-                  <h2 className="text-xl lg:text-2xl font-semibold text-slate-900">
-                    {section.sectionTitle}
-                  </h2>
-                </div>
+                ))}
               </div>
-
-              {section.roles.map((roleBlock) => (
-                <div key={roleBlock.role} className="mb-8 lg:mb-10 last:mb-0">
-                  <p className="text-base lg:text-lg font-semibold text-slate-800 mb-6">
-                    {roleBlock.role}
-                  </p>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-7 lg:gap-8">
-                    {roleBlock.members.map((m, index) => (
-                      <div
-                        key={`${roleBlock.role}-${m.name}-${index}`}
-                        className="bg-white rounded-[22px] border border-[#d7dff0] shadow-[0_12px_24px_rgba(15,23,42,0.25)] px-5 py-6 text-center"
-                      >
-                        <div className="mx-auto w-24 h-24 rounded-full border-[3px] border-dotted border-[#b46a94] p-1">
-                          <img
-                            src={m.image}
-                            alt={m.name}
-                            className="w-full h-full rounded-full object-cover"
-                            loading="lazy"
-                          />
-                        </div>
-
-                        <p className="mt-5 text-sm sm:text-lg font-semibold text-[#d81b60]">
-                          {m.name}
-                        </p>
-                        <p className="text-xs sm:text-base font-semibold text-[#3f51b5]">
-                          {m.designation}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
             </section>
           ))}
         </div>
