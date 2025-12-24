@@ -1,6 +1,5 @@
 import { Users, Calendar, MapPin, Star } from 'lucide-react';
 import Header from '../../components/common/Header';
-import MobileNav from '../../components/common/MobileNav';
 
 const PLACEHOLDER_IMAGE =
   'https://thumbs.dreamstime.com/b/profile-placeholder-image-gray-silhouette-no-photo-person-avatar-default-pic-used-web-design-173998594.jpg';
@@ -62,11 +61,11 @@ const committees = [
         ],
       },
       {
-        role: 'Co‑Chairperson',
+        role: 'Co-Chairperson',
         members: [
           {
             name: 'Dr Kumara A B',
-            designation: 'Scientific Co‑Chairperson',
+            designation: 'Scientific Co-Chairperson',
             image: PLACEHOLDER_IMAGE,
           },
         ],
@@ -220,9 +219,9 @@ const CommitteePage = () => {
     <div className="min-h-screen bg-slate-50">
       <Header />
 
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 pb-20">
+      <div className="max-w-6xl mx-auto px-4 lg:px-6 pb-20">
         {}
-        <div className="relative overflow-hidden rounded-3xl mt-4 mb-6">
+        <div className="relative overflow-hidden rounded-2xl mt-6 mb-8 border border-slate-200">
           <div className="absolute inset-0 bg-gradient-to-r from-[#005aa9] via-sky-700 to-indigo-700 opacity-90" />
           <div
             className="absolute inset-0 mix-blend-soft-light opacity-40"
@@ -233,31 +232,31 @@ const CommitteePage = () => {
               backgroundPosition: 'center',
             }}
           />
-          <div className="relative px-5 sm:px-8 py-8 sm:py-10 text-white">
-            <div className="flex flex-wrap items-center gap-3 mb-4">
-              <div className="inline-flex items-center justify-center w-9 h-9 rounded-2xl bg-white/15 backdrop-blur">
-                <Users className="w-4 h-4" />
+          <div className="relative px-6 lg:px-8 py-10 lg:py-12 text-white">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6 lg:mb-8">
+              <div className="inline-flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 rounded-2xl bg-white/20 backdrop-blur flex-shrink-0">
+                <Users className="w-6 h-6 lg:w-7 lg:h-7" />
               </div>
-              <div>
-                <h1 className="text-xl sm:text-2xl font-semibold tracking-tight">
-                  AOACON 2026 • Committees
+              <div className="flex-1 min-w-0">
+                <h1 className="text-2xl lg:text-3xl font-semibold leading-tight">
+                  AOACON 2026 Committees
                 </h1>
-                <p className="text-[12px] sm:text-[13px] text-slate-100/90">
-                  Organizing teams behind AOA Shivamogga 2026 – structure, roles and responsibilities.
+                <p className="text-base lg:text-lg text-slate-100/90 mt-2 leading-relaxed">
+                  Organizing teams behind AOA Shivamogga 2026 – structure, roles and responsibilities
                 </p>
               </div>
             </div>
-            <div className="flex flex-wrap gap-3 text-[11px] sm:text-[12px]">
-              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/10 border border-white/20">
-                <Calendar className="w-3.5 h-3.5" />
+            <div className="flex flex-wrap gap-3 text-sm lg:text-base">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/15 border border-white/25 font-medium">
+                <Calendar className="w-5 h-5 lg:w-6 lg:h-6 flex-shrink-0" />
                 30 Oct – 1 Nov 2026
               </span>
-              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/10 border border-white/20">
-                <MapPin className="w-3.5 h-3.5" />
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/15 border border-white/25 font-medium">
+                <MapPin className="w-5 h-5 lg:w-6 lg:h-6 flex-shrink-0" />
                 Shivamogga, Karnataka
               </span>
-              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/10 border border-white/20">
-                <Star className="w-3.5 h-3.5" />
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/15 border border-white/25 font-medium">
+                <Star className="w-5 h-5 lg:w-6 lg:h-6 flex-shrink-0" />
                 National Conference • AOA
               </span>
             </div>
@@ -265,62 +264,59 @@ const CommitteePage = () => {
         </div>
 
         {}
-        <div className="mb-6 rounded-2xl border border-slate-200 bg-white px-5 py-4 text-sm text-slate-700 shadow-sm">
-          <p className="max-w-3xl">
+        <div className="mb-8 text-base lg:text-lg text-slate-700 leading-relaxed">
+          <p>
             The conference is supported by dedicated committees overseeing scientific content,
-            hospitality, workshops, cultural events, logistics, and delegate experience.
-          </p>
-          <p className="mt-2 max-w-3xl">
-            Each section lists the key office bearers and committee members with their designated roles.
+            hospitality, workshops, cultural events, logistics, and delegate experience. Each section
+            lists the key office bearers and committee members with their designated roles.
           </p>
         </div>
 
         {}
-        <div className="space-y-8">
+        <div className="space-y-6 lg:space-y-8">
           {committees.map((section) => (
             <section
               key={section.sectionTitle}
-              className={`rounded-3xl border border-slate-200 bg-gradient-to-br ${section.accent} px-5 py-5 sm:px-6 sm:py-6`}
+              className={`rounded-2xl border border-slate-200 bg-gradient-to-br ${section.accent} px-6 lg:px-8 py-8 lg:py-12`}
             >
-              <div className="flex items-center justify-between gap-2 mb-4">
-                <h2 className="text-base sm:text-lg font-semibold text-slate-900 flex items-center gap-2">
-                  <span className="inline-flex w-8 h-8 rounded-2xl bg-white/80 text-[#005aa9] items-center justify-center text-[11px] shadow-sm">
-                    <Users className="w-4 h-4" />
-                  </span>
-                  {section.sectionTitle}
-                </h2>
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 lg:mb-10">
+                <div className="flex items-center gap-4">
+                  <div className="inline-flex w-12 h-12 lg:w-14 lg:h-14 rounded-2xl bg-white/80 text-[#005aa9] items-center justify-center flex-shrink-0">
+                    <Users className="w-6 h-6 lg:w-7 lg:h-7" />
+                  </div>
+                  <h2 className="text-xl lg:text-2xl font-semibold text-slate-900">
+                    {section.sectionTitle}
+                  </h2>
+                </div>
               </div>
 
               {section.roles.map((roleBlock) => (
-                <div
-                  key={roleBlock.role}
-                  className="mb-4 last:mb-0 rounded-2xl border border-slate-200/70 bg-white/85 px-4 py-4"
-                >
-                  <p className="text-xs sm:text-sm font-semibold text-slate-800 mb-3 uppercase tracking-wide">
+                <div key={roleBlock.role} className="mb-8 lg:mb-10 last:mb-0">
+                  <p className="text-base lg:text-lg font-semibold text-slate-800 mb-6">
                     {roleBlock.role}
                   </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {roleBlock.members.map((m) => (
+                  <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6">
+                    {roleBlock.members.map((m, index) => (
                       <div
-                        key={`${roleBlock.role}-${m.name}`}
-                        className="flex items-center gap-4 rounded-2xl bg-white border border-slate-200 px-4 py-4 shadow-sm"
+                        key={`${roleBlock.role}-${m.name}-${index}`}
+                        className="flex flex-col items-center justify-center gap-4 rounded-xl bg-white border border-slate-100 px-4 py-4 lg:px-6 lg:py-5 hover:bg-slate-50 transition-colors group"
                       >
-                        {}
-                        <div className="w-12 h-12 rounded-2xl overflow-hidden ring-2 ring-slate-100 shadow-sm bg-slate-100 flex-shrink-0">
+                        <div className="w-14 h-14 lg:w-16 lg:h-16 rounded-2xl overflow-hidden border border-slate-200 flex-shrink-0">
                           <img
                             src={m.image}
                             alt={m.name}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-200"
                             loading="lazy"
                           />
                         </div>
 
-                        {}
-                        <div className="min-w-0">
-                          <p className="text-sm font-semibold text-slate-900 truncate">
+                        <div className="min-w-0 flex-1 text-center">
+                          <p className="text-base lg:text-md font-semibold text-slate-900  leading-tight">
                             {m.name}
                           </p>
-                          <p className="text-xs text-slate-600 truncate">{m.designation}</p>
+                          <p className="text-sm lg:text-base text-slate-600 mt-1 leading-tight truncate">
+                            {m.designation}
+                          </p>
                         </div>
                       </div>
                     ))}
@@ -331,8 +327,6 @@ const CommitteePage = () => {
           ))}
         </div>
       </div>
-
-      <MobileNav />
     </div>
   );
 };
