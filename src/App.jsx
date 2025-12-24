@@ -16,6 +16,7 @@ import AbstractUploadPage from './pages/user/AbstractUploadPage';
 import FeedbackPage from './pages/user/FeedbackPage';
 import RegistrationFeesPage from './pages/user/RegistrationFeesPage';
 import CommitteePage from './pages/user/CommitteePage';
+import OfficeBearersPage from './pages/user/OfficeBearersPage';
 import VenuePage from './pages/user/VenuePage';
 import ContactPage from './pages/user/ContactPage';
 import HomePage from './pages/user/HomePage';
@@ -157,6 +158,13 @@ const SeoManager = () => {
         keywords: 'AOACON committee, organizing committee, scientific committee',
       },
       {
+        match: (path) => path === '/office-bearers',
+        title: 'AOA Office Bearers | AOACON 2026',
+        description:
+          'Meet the AOA office bearers leading the Association of Obstetric Anaesthesiologists.',
+        keywords: 'AOA office bearers, AOA leadership, obstetric anaesthesiologists',
+      },
+      {
         match: (path) => path === '/contact',
         title: 'Contact | AOACON 2026',
         description:
@@ -264,6 +272,10 @@ function App() {
               
               <Route path="/committee" element={
                   <CommitteePage />
+              } />
+
+              <Route path="/office-bearers" element={
+                  <OfficeBearersPage />
               } />
               
               <Route path="/contact" element={

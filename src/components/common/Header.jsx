@@ -29,6 +29,7 @@ const MobileDrawer = ({ open, onClose }) => {
   const drawerItems = [
     { label: 'Home', path: '/', icon: Home },
     { label: 'Committee', path: '/committee', icon: Users },
+    { label: 'AOA Office Bearers', path: '/office-bearers', icon: Users },
     { label: 'Venue', path: '/venue', icon: MapPin },
     { label: 'Accommodation', path: '/accommodation', icon: Hotel },
     { label: 'Abstract', path: '/abstract/rules', icon: FileText },
@@ -145,7 +146,8 @@ const Header = () => {
       label: 'Conference',
       icon: Users,
       items: [
-        { label: 'Committee', path: '/committee', icon: Users },
+        { label: 'AOA Office Bearers', path: '/office-bearers', icon: Users },
+        { label: 'Organising Committee', path: '/committee', icon: Users },
         { label: 'Program Schedule', path: '/conference-days', icon: Calendar },
       ],
     },
