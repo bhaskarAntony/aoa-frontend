@@ -6,7 +6,7 @@ const PLACEHOLDER_IMAGE =
 
 const committees = [
   {
-    sectionTitle: 'Core Organizing Committee',
+    sectionTitle: 'Core Organizing Team',
     accent: 'from-emerald-500/10 to-emerald-500/0',
     roles: [
       {
@@ -42,7 +42,7 @@ const committees = [
     ],
   },
   {
-    sectionTitle: 'Scientific Committee',
+    sectionTitle: 'Scientific Team',
     accent: 'from-sky-500/10 to-sky-500/0',
     roles: [
       {
@@ -84,7 +84,7 @@ const committees = [
     ],
   },
   {
-    sectionTitle: 'Reception & Registration Committee',
+    sectionTitle: 'Reception & Registration Team',
     accent: 'from-amber-500/10 to-amber-500/0',
     roles: [
       {
@@ -101,7 +101,7 @@ const committees = [
     ],
   },
   {
-    sectionTitle: 'Travel & Accommodation Committee',
+    sectionTitle: 'Travel & Accommodation Team',
     accent: 'from-violet-500/10 to-violet-500/0',
     roles: [
       {
@@ -116,7 +116,7 @@ const committees = [
     ],
   },
   {
-    sectionTitle: 'Venue Detailing Committee',
+    sectionTitle: 'Venue Detailing Team',
     accent: 'from-teal-500/10 to-teal-500/0',
     roles: [
       {
@@ -129,11 +129,11 @@ const committees = [
     ],
   },
   {
-    sectionTitle: 'Workshop & Courses Committee',
+    sectionTitle: 'Workshops & Courses',
     accent: 'from-rose-500/10 to-rose-500/0',
     roles: [
       {
-        role: 'Workshop Committee Members',
+        role: 'Workshop Team Members',
         members: [
           { name: 'Dr Yashoda V', designation: 'Workshop Coordinator', image: PLACEHOLDER_IMAGE },
           { name: 'Dr Sandhya', designation: 'Workshop Coordinator', image: PLACEHOLDER_IMAGE },
@@ -169,7 +169,7 @@ const committees = [
     ],
   },
   {
-    sectionTitle: 'Food & Banquet Committee',
+    sectionTitle: 'Food & Banquet Team',
     accent: 'from-amber-500/10 to-amber-500/0',
     roles: [
       {
@@ -184,7 +184,7 @@ const committees = [
     ],
   },
   {
-    sectionTitle: 'Cultural Committee',
+    sectionTitle: 'Cultural Team',
     accent: 'from-indigo-500/10 to-indigo-500/0',
     roles: [
       {
@@ -199,7 +199,7 @@ const committees = [
     ],
   },
   {
-    sectionTitle: 'Memento & Kits Committee',
+    sectionTitle: 'Memento & Kits Team',
     accent: 'from-fuchsia-500/10 to-fuchsia-500/0',
     roles: [
       {
@@ -239,7 +239,7 @@ const CommitteePage = () => {
               </div>
               <div className="flex-1 min-w-0">
                 <h1 className="text-2xl lg:text-3xl font-semibold leading-tight">
-                  AOACON 2026 Committees
+                  AOACON 2026 Committee
                 </h1>
                 <p className="text-base lg:text-lg text-slate-100/90 mt-2 leading-relaxed">
                   Organizing teams behind AOA Shivamogga 2026 – structure, roles and responsibilities
@@ -266,9 +266,9 @@ const CommitteePage = () => {
         {}
         <div className="mb-8 text-base lg:text-lg text-slate-700 leading-relaxed">
           <p>
-            The conference is supported by dedicated committees overseeing scientific content,
-            hospitality, workshops, cultural events, logistics, and delegate experience. Each section
-            lists the key office bearers and committee members with their designated roles.
+            The conference is supported by dedicated teams overseeing scientific content, hospitality,
+            workshops, cultural events, logistics, and delegate experience. Each section lists the key
+            office bearers and team members with their designated roles.
           </p>
         </div>
 
@@ -295,29 +295,27 @@ const CommitteePage = () => {
                   <p className="text-base lg:text-lg font-semibold text-slate-800 mb-6">
                     {roleBlock.role}
                   </p>
-                  <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-7 lg:gap-8">
                     {roleBlock.members.map((m, index) => (
                       <div
                         key={`${roleBlock.role}-${m.name}-${index}`}
-                        className="flex flex-col items-center justify-center gap-4 rounded-xl bg-white border border-slate-100 px-4 py-4 lg:px-6 lg:py-5 hover:bg-slate-50 transition-colors group"
+                        className="bg-white rounded-[22px] border border-[#d7dff0] shadow-[0_12px_24px_rgba(15,23,42,0.25)] px-5 py-6 text-center"
                       >
-                        <div className="w-14 h-14 lg:w-16 lg:h-16 rounded-2xl overflow-hidden border border-slate-200 flex-shrink-0">
+                        <div className="mx-auto w-24 h-24 rounded-full border-[3px] border-dotted border-[#b46a94] p-1">
                           <img
                             src={m.image}
                             alt={m.name}
-                            className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-200"
+                            className="w-full h-full rounded-full object-cover"
                             loading="lazy"
                           />
                         </div>
 
-                        <div className="min-w-0 flex-1 text-center">
-                          <p className="text-base lg:text-md font-semibold text-slate-900  leading-tight">
-                            {m.name}
-                          </p>
-                          <p className="text-sm lg:text-base text-slate-600 mt-1 leading-tight truncate">
-                            {m.designation}
-                          </p>
-                        </div>
+                        <p className="mt-5 text-sm sm:text-lg font-semibold text-[#d81b60]">
+                          {m.name}
+                        </p>
+                        <p className="text-xs sm:text-base font-semibold text-[#3f51b5]">
+                          {m.designation}
+                        </p>
                       </div>
                     ))}
                   </div>

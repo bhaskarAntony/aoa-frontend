@@ -41,7 +41,7 @@ const OfficeBearersPage = () => {
           className="h-36 sm:h-44 lg:h-52 bg-cover bg-center"
           style={{
             backgroundImage:
-              'url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80)',
+              'url(https://thecollegesphere.com/wp-content/uploads/2025/09/Shimoga-Institute-of-Medical-Sciences.gif)',
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/30" />
