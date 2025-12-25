@@ -1,5 +1,6 @@
 import { Users, Calendar, MapPin, Star } from 'lucide-react';
 import Header from '../../components/common/Header';
+import Footer from '../../components/common/Footer';
 
 const PLACEHOLDER_IMAGE =
   'https://thumbs.dreamstime.com/b/profile-placeholder-image-gray-silhouette-no-photo-person-avatar-default-pic-used-web-design-173998594.jpg';
@@ -278,7 +279,7 @@ const CommitteePage = () => {
                 {section.roles.flatMap((roleBlock) => roleBlock.members).map((m, index) => (
                   <div
                     key={`${section.sectionTitle}-${m.name}-${index}`}
-                    className="bg-white rounded-[18px] border border-slate-200 shadow-[0_10px_18px_rgba(0,0,0,0.2)] px-6 py-6 text-center"
+                    className="bg-white rounded-[18px] border border-slate-200 shadow-md px-6 py-6 text-center"
                   >
                     <div className="mx-auto w-28 h-28 rounded-full border-[2px] border-dotted border-[#8d3c6d] p-1">
                       <img
@@ -302,6 +303,8 @@ const CommitteePage = () => {
           ))}
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

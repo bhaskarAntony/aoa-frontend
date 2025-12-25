@@ -1,4 +1,5 @@
 import Header from '../../components/common/Header';
+import Footer from '../../components/common/Footer';
 import anjuGrewal from '../../images/AOAOfficeBearers/Anju-Grewal.jpg';
 import arunaParameswari from '../../images/AOAOfficeBearers/Aruna-Parameswari.jpg';
 import kajalJain from '../../images/AOAOfficeBearers/Kajal-Jain.jpg';
@@ -36,31 +37,42 @@ const OfficeBearersPage = () => {
     <div className="min-h-screen bg-slate-50">
       <Header />
 
-      <section className="relative overflow-hidden">
-        <div
-          className="h-36 sm:h-44 lg:h-52 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              'url(https://thecollegesphere.com/wp-content/uploads/2025/09/Shimoga-Institute-of-Medical-Sciences.gif)',
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/30" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wide">
-            Office Bearers
-          </h1>
-          <p className="text-xs sm:text-sm mt-2 text-white/90">
-            Home <span className="mx-2">|</span> AOA Office Bearers
-          </p>
-        </div>
-      </section>
+        <section className="overflow-hidden border border-slate-200 bg-slate-900 text-white text-center">
+          <div className="relative">
+            <div
+              className="absolute inset-0 opacity-70  py-20"
+              style={{
+                backgroundImage:
+                  'url(https://secureadmissions.in/wp-content/uploads/2025/06/10980_index_20.gif)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/85 to-slate-800/90" />
+
+            <div className="relative px-6 lg:px-8 py-10 lg:py-12">
+              <div className="flex flex-wrap items-center gap-4 mb-6 lg:mb-8  justify-center">
+                <h1 className="text-2xl lg:text-3xl font-semibold leading-tight text-center">
+                 Office Bearers 
+                </h1>
+              </div>
+             
+              <div className="flex flex-wrap gap-4 text-sm lg:text-base  justify-center">
+                <span className=" font-medium">
+                  Home | AOA Office Bearers
+                </span>
+                
+              </div>
+            </div>
+          </div>
+        </section>
 
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-7 lg:gap-8">
           {officeBearers.map((member) => (
             <div
               key={member.name}
-              className="bg-white rounded-[22px] border border-[#d7dff0] shadow-[0_12px_24px_rgba(15,23,42,0.25)] px-5 py-6 text-center"
+              className="bg-white rounded-[22px] border border-[#d7dff0]  shadow-md px-5 py-6 text-center"
             >
               <div className="mx-auto w-28 h-28 rounded-full border-[3px] border-dotted border-[#b46a94] p-1">
                 <img
@@ -80,6 +92,8 @@ const OfficeBearersPage = () => {
           ))}
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

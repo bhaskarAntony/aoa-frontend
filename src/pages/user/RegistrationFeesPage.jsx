@@ -2,6 +2,7 @@ import { Calendar, Info, Phone, Mail } from 'lucide-react';
 import Header from '../../components/common/Header';
 import MobileNav from '../../components/common/MobileNav';
 import RegistrationFeesSection from '../../components/common/RegistrationFeesSection';
+import Footer from '../../components/common/Footer';
 
 const RegistrationFeesPage = () => {
   return (
@@ -21,52 +22,52 @@ const RegistrationFeesPage = () => {
         </section>
 
         {}
-        <section className="p-5 border border-slate-200 rounded-xl bg-slate-50/70 space-y-4">
-          <h2 className="text-sm font-semibold text-slate-900 flex items-center gap-2">
-            <Info className="w-4 h-4 text-[#005aa9]" />
+        <section className="p-5 border border-slate-200 rounded-xl bg-[#8ea731] space-y-4 " style={{color:"#fff !important"}}>
+          <h2 className="text-sm font-semibold text-white flex items-center gap-2">
+            <Info className="w-4 h-4 text-red-800" />
             Conference Registration Terms and Conditions
           </h2>
 
-          <div className="space-y-3 text-[12px] leading-relaxed text-slate-700">
+          <div className="space-y-3 text-[12px] leading-relaxed text-white text-lg">
             <div>
-              <p className="font-semibold text-slate-900 mb-1">1. Eligibility</p>
+              <p className="font-semibold text-black mb-1">1. Eligibility</p>
               <p>The conference is open to registered delegates only.</p>
               <p>Delegates must complete the registration process and pay the applicable fees to confirm participation.</p>
             </div>
             <div>
-              <p className="font-semibold text-slate-900 mb-1">2. Payment Terms</p>
+              <p className="font-semibold text-black mb-1">2. Payment Terms</p>
               <p>All registration fees must be paid in full at the time of registration via the available payment methods.</p>
               <p>Registrations will only be confirmed upon receipt of full payment.</p>
             </div>
             <div>
-              <p className="font-semibold text-slate-900 mb-1">3. Delegate Information</p>
+              <p className="font-semibold text-black mb-1">3. Delegate Information</p>
               <p>The information provided during registration must be accurate. Any errors should be reported immediately.</p>
               <p>Transfer of registration is subject to approval and must be requested in writing.</p>
             </div>
             <div>
-              <p className="font-semibold text-slate-900 mb-1">4. Liability Disclaimer</p>
+              <p className="font-semibold text-black mb-1">4. Liability Disclaimer</p>
               <p>The organizers will not be responsible for any personal injury, loss, or damage to personal belongings during the conference.</p>
               <p>Travel and accommodation arrangements are the responsibility of the delegate.</p>
             </div>
             <div>
-              <p className="font-semibold text-slate-900 mb-1">5. Changes to the Program</p>
+              <p className="font-semibold text-black mb-1">5. Changes to the Program</p>
               <p>The organizers reserve the right to modify the conference program, including speakers, sessions, and schedules, without prior notice.</p>
             </div>
             <div>
-              <p className="font-semibold text-slate-900 mb-1">6. Includes</p>
+              <p className="font-semibold text-black mb-1">6. Includes</p>
               <p>Registration includes 3 lunches, 1 dinner, delegate kit, and access to scientific halls and exhibition area.</p>
             </div>
           </div>
         </section>
 
         {}
-        <section className="p-5 border border-slate-200 rounded-xl bg-white space-y-4">
+        <section className="p-5 border border-slate-200 rounded-xl bg-[#ff8a1f] space-y-4">
           <h2 className="text-sm font-semibold text-slate-900 flex items-center gap-2">
             <Calendar className="w-4 h-4 text-[#005aa9]" />
             Cancellation and Refund Policy
           </h2>
 
-          <div className="space-y-3 text-[12px] leading-relaxed text-slate-700">
+          <div className="space-y-3 text-[12px] leading-relaxed text-white text-lg ">
             <div>
               <p className="font-semibold text-slate-900 mb-1">1. Cancellation by Delegate</p>
               <p>All cancellation requests must be made in writing via email to the conference secretariat.</p>
@@ -100,12 +101,12 @@ const RegistrationFeesPage = () => {
         </section>
 
         {}
-        <section className="p-5 border border-slate-200 rounded-xl bg-slate-50/80 space-y-3">
+        <section className="p-5 border border-slate-200 rounded-xl bg-[#7cb342] space-y-3 text-md">
           <h2 className="text-sm font-semibold text-slate-900 flex items-center gap-2">
             <Phone className="w-4 h-4 text-[#005aa9]" />
             For Registration Related Query
           </h2>
-          <div className="text-[12px] text-slate-700 space-y-1">
+          <div className="text-white space-y-1">
             <p className="font-semibold text-slate-900">Mr. Rohit Kamra</p>
             <p className="flex items-center gap-2">
               <Phone className="w-3.5 h-3.5 text-slate-600" />
@@ -115,16 +116,17 @@ const RegistrationFeesPage = () => {
               <Mail className="w-3.5 h-3.5 text-slate-600" />
               Email:{' '}
               <a
-                href="mailto:projects1@meetingsnmore.com"
+                href="mailto:regaoacon2026@gmail.com"
                 className="text-[#005aa9] hover:underline"
               >
-                projects1@meetingsnmore.com
+                regaoacon2026@gmail.com
               </a>
             </p>
           </div>
         </section>
       </div>
 
+      <Footer />
       <MobileNav />
     </div>
   );

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import logo from '../../images/logo.png';
-import mainLogo from '../../images/main-logo.jpg';
+import mainLogo from '../../images/main-logo.png';
 import {
   LogOut,
   Menu,
@@ -18,6 +18,8 @@ import {
   Calendar,
   User,
   Map,
+  HomeIcon,
+  UserSquareIcon,
 } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 
@@ -29,9 +31,9 @@ const MobileDrawer = ({ open, onClose }) => {
   const drawerItems = [
     { label: 'Home', path: '/', icon: Home },
     { label: 'Committee', path: '/committee', icon: Users },
-    { label: 'AOA Office Bearers', path: '/office-bearers', icon: Users },
     { label: 'Venue', path: '/venue', icon: MapPin },
     { label: 'Accommodation', path: '/accommodation', icon: Hotel },
+    { label: 'AOA Office Bearers', path: '/office-bearers', icon: UserSquareIcon },
     { label: 'Abstract', path: '/abstract/rules', icon: FileText },
     { label: 'Program Schedule', path: '/conference-days', icon: Calendar },
     { label: 'Registration Details', path: '/register-details', icon: FileText },
@@ -146,8 +148,8 @@ const Header = () => {
       label: 'Conference',
       icon: Users,
       items: [
-        { label: 'AOA Office Bearers', path: '/office-bearers', icon: Users },
-        { label: 'Organising Committee', path: '/committee', icon: Users },
+        { label: 'AOA Office Bearers', path: '/office-bearers', icon: UserSquareIcon },
+        { label: 'Committee', path: '/committee', icon: Users },
         { label: 'Program Schedule', path: '/conference-days', icon: Calendar },
       ],
     },
@@ -179,25 +181,26 @@ const Header = () => {
   return (
     <div className="bg-white">
       {}
-      <div className="w-full px-3 py-2 flex items-center justify-between gap-3 flex-wrap md:gap-6 md:px-8">
-        <img
-          src={logo}
-          alt="Logo 1"
-          className="h-12 w-auto md:h-16 object-contain"
-        />
-        <img
-          src={mainLogo}
-          alt="Logo 2"
-          className="h-12 w-auto md:h-16 object-contain"
-        />
-        <img
-          src="https://aoacon2025.com/images/logo3.jpg"
-          alt="Logo 3"
-          className="h-12 w-auto md:h-16 object-contain"
-        />
-      </div>
+     <div className="w-full bg-white/95 backdrop-blur-md px-3 py-2 flex items-center justify-between gap-3 flex-wrap md:gap-6 md:px-8 relative z-50 border-b border-white/50">
+  <img
+    src={logo}
+    alt="Logo 1"
+    className="h-12 w-auto md:h-16 object-contain"
+  />
+  <img
+    src={mainLogo}
+    alt="Logo 2"
+    className="h-12 w-auto md:h-16 object-contain"
+  />
+  <img
+    src="https://aoacon2025.com/images/logo3.jpg"
+    alt="Logo 3"
+    className="h-12 w-auto md:h-16 object-contain"
+  />
+</div>
 
-      <header className="bg-[#005aa9] border-b border-slate-200 shadow-sm sticky top-0 z-50">
+
+      <header className="bg-[#9c3253] border-b border-slate-200 shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="flex justify-between items-center h-14 lg:h-16">
             {}
@@ -266,7 +269,7 @@ const Header = () => {
                               navigate(subItem.path);
                               setActiveDropdown(null);
                             }}
-                            className="flex items-center gap-3 w-full px-5 py-3.5 text-sm text-slate-700 hover:bg-[#005aa9] hover:text-white border-l-4 border-transparent hover:border-l-[#005aa9]/30 transition-all duration-200"
+                            className="flex items-center gap-3 w-full px-5 py-3.5 text-sm text-slate-700 hover:bg-[#9c3253] hover:text-white border-l-4 border-transparent hover:border-l-[#005aa9]/30 transition-all duration-200"
                           >
                             <span className="font-medium">{subItem.label}</span>
                           </button>
@@ -355,7 +358,7 @@ const Header = () => {
               ) : (
                 <button
                   onClick={() => navigate('/login')}
-                  className="px-3 py-2 text-sm font-semibold text-[#005aa9] bg-white rounded-lg hover:bg-slate-100 transition-all duration-200 whitespace-nowrap"
+                  className="px-3 py-2 text-sm font-semibold text-[#9c3253] bg-white rounded-lg hover:bg-slate-100 transition-all duration-200 whitespace-nowrap"
                 >
                   Login / Register
                 </button>

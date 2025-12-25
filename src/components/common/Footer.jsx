@@ -1,68 +1,113 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Mail, Phone } from 'lucide-react';
+import { MapPin, Phone, Mail, Calendar } from 'lucide-react';
+import mainLogo from '../../images/main-logo.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-slate-100 border-t border-slate-800 pb-16 md:pb-0">
-      <div className="max-w-6xl mx-auto px-4 lg:px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="space-y-3">
-          <p className="text-sm uppercase tracking-[0.2em] text-slate-400">AOACON 2026</p>
-          <h3 className="text-lg font-semibold text-white">
-            Association of Obstetric Anaesthesiologists Conference
-          </h3>
-          <p className="text-sm text-slate-300">
-            Hosted by the Department of Anaesthesiology, SIMS and ISA City Chapter, Shivamogga.
-          </p>
+    <footer className="border-t border-slate-200 bg-slate-900 text-slate-100">
+      <div className="max-w-6xl mx-auto px-4 lg:px-6 py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="space-y-4">
+            <img src={mainLogo} alt="AOACON 2026" className="h-12 w-auto" />
+            <p className="text-sm text-slate-300 leading-relaxed">
+              AOACON 2026 at Shivamogga Institute of Medical Sciences brings together
+              obstetric anaesthesia experts, researchers, and learners from across India.
+            </p>
+            <div className="flex items-center gap-2 text-xs text-slate-300">
+              <Calendar className="w-4 h-4 text-emerald-300" />
+              <span>30 Oct - 1 Nov 2026</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wide">
+              Quick Links
+            </h3>
+            <div className="grid grid-cols-2 gap-2 text-sm">
+              <Link to="/" className="text-slate-300 hover:text-white">
+                Home
+              </Link>
+              <Link to="/venue" className="text-slate-300 hover:text-white">
+                Venue
+              </Link>
+              <Link to="/committee" className="text-slate-300 hover:text-white">
+                Committee
+              </Link>
+              <Link to="/office-bearers" className="text-slate-300 hover:text-white">
+                Office Bearers
+              </Link>
+              <Link to="/register-details" className="text-slate-300 hover:text-white">
+                Registration
+              </Link>
+              <Link to="/download" className="text-slate-300 hover:text-white">
+                Brochure
+              </Link>
+              <Link to="/contact" className="text-slate-300 hover:text-white">
+                Contact
+              </Link>
+              <Link to="/register" className="text-slate-300 hover:text-white">
+                Register Now
+              </Link>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wide">
+              Secretariat
+            </h3>
+            <div className="space-y-3 text-sm text-slate-300">
+              <p className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 text-sky-300 mt-0.5" />
+                <span>
+                  Department of Anaesthesiology, SIMS
+                  <br />
+                  Shivamogga, Karnataka, India
+                </span>
+              </p>
+              <p className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-emerald-300" />
+                <span>+91 98189 65679</span>
+              </p>
+              <p className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-amber-300" />
+                <a
+                  href="mailto:projects1@meetingsnmore.com"
+                  className="hover:text-white"
+                >
+                  projects1@meetingsnmore.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wide">
+              Stay Updated
+            </h3>
+            <p className="text-sm text-slate-300">
+              Follow conference updates for registration deadlines, program schedules, and
+              workshop highlights.
+            </p>
+            <div className="flex flex-col gap-2">
+              <Link
+                to="/register-details"
+                className="inline-flex items-center justify-center rounded-xl bg-white/10 border border-white/20 px-3 py-2 text-sm font-semibold text-white hover:bg-white/20 transition"
+              >
+                View Registration Fees
+              </Link>
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center rounded-xl bg-white text-slate-900 px-3 py-2 text-sm font-semibold hover:bg-slate-100 transition"
+              >
+                Contact Secretariat
+              </Link>
+            </div>
+          </div>
         </div>
 
-        <div className="space-y-3">
-          <p className="text-sm font-semibold text-white">Quick links</p>
-          <div className="grid grid-cols-2 gap-2 text-sm text-slate-300">
-            <Link className="hover:text-white transition-colors" to="/">
-              Home
-            </Link>
-            <Link className="hover:text-white transition-colors" to="/register-details">
-              Registration
-            </Link>
-            <Link className="hover:text-white transition-colors" to="/venue">
-              Venue
-            </Link>
-            <Link className="hover:text-white transition-colors" to="/contact">
-              Contact
-            </Link>
-            <Link className="hover:text-white transition-colors" to="/terms">
-              Terms & Conditions
-            </Link>
-            <Link className="hover:text-white transition-colors" to="/cancellation-policy">
-              Cancellation Policy
-            </Link>
-            <Link className="hover:text-white transition-colors" to="/privacy-policy">
-              Privacy Policy
-            </Link>
-          </div>
-        </div>
-
-        <div className="space-y-3 text-sm text-slate-300">
-          <p className="text-sm font-semibold text-white">Contact</p>
-          <div className="flex items-start gap-2">
-            <MapPin className="w-4 h-4 mt-0.5 text-emerald-200" />
-            <span>Shimoga Institute of Medical Sciences, Shivamogga, Karnataka</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Phone className="w-4 h-4 text-emerald-200" />
-            <span>6361912008</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Mail className="w-4 h-4 text-emerald-200" />
-            <span>regaoacon2026@gmail.com</span>
-          </div>
-        </div>
-      </div>
-
-      <div className="border-t border-slate-800">
-        <div className="max-w-6xl mx-auto px-4 lg:px-6 py-4 text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-          <span>© 2026 AOACON Shivamogga. All rights reserved.</span>
-          <span>Conference terms apply to all registered delegates.</span>
+        <div className="mt-8 border-t border-white/10 pt-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+          <p>AOACON 2026 - Association of Obstetric Anaesthesiologists</p>
+          <p>All rights reserved.</p>
         </div>
       </div>
     </footer>
