@@ -5,7 +5,6 @@ import {
   Users,
   Clock,
   Stethoscope,
-  HeartPulse,
   Building2,
 } from 'lucide-react';
 import Header from '../../components/common/Header';
@@ -164,13 +163,18 @@ const HomePage = () => {
 
       {}
       <section className="border-b border-slate-300 bg-white py-12 lg:py-14">
-        <div className="max-w-6xl mx-auto px-4 lg:px-6 grid grid-cols-1 lg:grid-cols-3 gap-10">
-          <div className="lg:col-span-2 space-y-5">
+        <div className="max-w-5xl mx-auto px-4 lg:px-6">
+          <div className="space-y-5">
             <h2 className="text-[26px] lg:text-[28px] font-bold text-slate-900 leading-snug">
               Welcome to the 19th National Conference of Association of Obstetric
               Anaesthesiologists
             </h2>
-            <div className="space-y-4 text-[18px] text-slate-800 leading-relaxed">
+            <div className="space-y-1 text-[18px] text-slate-800 leading-relaxed">
+              <p className="font-semibold uppercase tracking-[0.25em] text-slate-500">
+                Theme 2026 : Bridging the Urban–Rural Gap in Obstetric Anaesthesia
+              </p>
+            </div>
+            <div className="space-y-4 text-[18px] text-slate-800 leading-relaxed text-justify">
               <p>
                 It gives us great pleasure to welcome you to the 19th National Conference of Obstetric Anaesthesiologists, 
                 proudly hosted by the Department of Anaesthesiology, SIMS and the ISA City Chapter, Shivamogga. 
@@ -199,7 +203,7 @@ const HomePage = () => {
               </p>
               <p className="font-semibold">
                 We look forward to your participation.
-                <span className="block mt-2 text-[15px] font-normal">
+                <span className="block mt-2 font-normal">
                   Regards,<br/>
 The Organizing committee<br/>
 AOACON 2026<br/>
@@ -207,31 +211,6 @@ Department of Anaesthesiology, Shimoga Institute of Medical Sciences (SIMS) and 
                 </span>
               </p>
             </div>
-          </div>
-
-          <div className="bg-[#7cb342] border border-slate-300 px-6 py-6 space-y-4 text-white">
-            <div className="flex items-center gap-3">
-              <div className="w-11 h-11 flex items-center justify-center bg-white border border-rose-300">
-                <HeartPulse className="w-6 h-6 text-rose-600" />
-              </div>
-              <div>
-                <p className="text-[12px] font-semibold tracking-[0.25em] uppercase text-rose-100">
-                  Theme 2026
-                </p>
-                <p className="text-[18px] font-semibold">
-                  Bridging the Urban–Rural Gap in Obstetric Anaesthesia
-                </p>
-              </div>
-            </div>
-            <p className="text-[15px] text-slate-100 leading-relaxed">
-              Emphasis on equitable access, critical care readiness, and context‑appropriate
-              protocols for every mother, everywhere.
-            </p>
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxvHBBYogt3GOpiDFNm90puXa7oo2DlPP2Qg&s"
-              alt="Theme"
-              className="w-full h-44 object-cover border border-rose-200"
-            />
           </div>
         </div>
       </section>
