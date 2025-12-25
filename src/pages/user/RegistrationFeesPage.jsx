@@ -22,7 +22,11 @@ const RegistrationFeesPage = () => {
         </section>
 
         {}
-        <section className="p-5 border border-slate-200 rounded-xl bg-[#8ea731] space-y-4 " style={{color:"#fff !important"}}>
+        <section
+          id="terms-conditions"
+          className="p-5 border border-slate-200 rounded-xl bg-[#8ea731] space-y-4 "
+          style={{ color: '#fff !important' }}
+        >
           <h2 className="text-sm font-semibold text-white flex items-center gap-2">
             <Info className="w-4 h-4 text-red-800" />
             Conference Registration Terms and Conditions
@@ -61,7 +65,41 @@ const RegistrationFeesPage = () => {
         </section>
 
         {}
-        <section className="p-5 border border-slate-200 rounded-xl bg-[#ff8a1f] space-y-4">
+        <section
+          id="privacy-policy"
+          className="p-5 border border-slate-200 rounded-xl bg-[#e3f2fd] space-y-4"
+        >
+          <h2 className="text-sm font-semibold text-slate-900 flex items-center gap-2">
+            <Info className="w-4 h-4 text-[#005aa9]" />
+            Privacy Policy
+          </h2>
+
+          <div className="space-y-3 text-[12px] leading-relaxed text-slate-800 text-lg">
+            <p>
+              We collect only the information required for conference registration and communication,
+              such as name, contact details, affiliation, and payment references.
+            </p>
+            <p>
+              Your information is used to process registrations, issue receipts, and share essential
+              conference updates. Payment processing is handled by the payment gateway and we do not
+              store card or bank details on our servers.
+            </p>
+            <p>
+              We do not sell or share your personal information with third parties, except as required
+              for processing payments or complying with legal obligations.
+            </p>
+            <p>
+              For any privacy related concerns, contact the conference secretariat at
+              regaoacon2026@gmail.com.
+            </p>
+          </div>
+        </section>
+
+        {}
+        <section
+          id="refund-policy"
+          className="p-5 border border-slate-200 rounded-xl bg-[#ff8a1f] space-y-4"
+        >
           <h2 className="text-sm font-semibold text-slate-900 flex items-center gap-2">
             <Calendar className="w-4 h-4 text-[#005aa9]" />
             Cancellation and Refund Policy

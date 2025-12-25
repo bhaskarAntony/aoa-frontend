@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="space-y-4">
             <img src={mainLogo} alt="AOACON 2026" className="h-12 w-auto" />
             <p className="text-sm text-slate-300 leading-relaxed">
-              AOACON 2026 at Shivamogga Institute of Medical Sciences brings together
+              AOACON 2026 at Shimoga Institute of Medical Sciences brings together
               obstetric anaesthesia experts, researchers, and learners from across India.
             </p>
             <div className="flex items-center gap-2 text-xs text-slate-300">
@@ -48,6 +48,24 @@ const Footer = () => {
               <Link to="/register" className="text-slate-300 hover:text-white">
                 Register Now
               </Link>
+              <Link
+                to="/register-details#terms-conditions"
+                className="text-slate-300 hover:text-white"
+              >
+                Terms & Conditions
+              </Link>
+              <Link
+                to="/register-details#privacy-policy"
+                className="text-slate-300 hover:text-white"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                to="/register-details#refund-policy"
+                className="text-slate-300 hover:text-white"
+              >
+                Refund Policy
+              </Link>
             </div>
           </div>
 
@@ -66,15 +84,15 @@ const Footer = () => {
               </p>
               <p className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-emerald-300" />
-                <span>+91 98189 65679</span>
+                <span>Dr. Champa BV • +91 97400 73702</span>
               </p>
               <p className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-amber-300" />
                 <a
-                  href="mailto:projects1@meetingsnmore.com"
+                  href="mailto:regaoacon2026@gmail.com"
                   className="hover:text-white"
                 >
-                  projects1@meetingsnmore.com
+                  regaoacon2026@gmail.com
                 </a>
               </p>
             </div>

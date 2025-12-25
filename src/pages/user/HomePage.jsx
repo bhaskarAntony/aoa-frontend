@@ -150,7 +150,7 @@ const HomePage = () => {
                 Official venue
               </p>
               <p className="text-[18px] font-semibold">
-                Shimoga Institute of Medical Sciences (SIMS), Shivamogga, Karnataka
+                1st Floor Auditorium, Shimoga Institute of Medical Sciences (SIMS), Shivamogga, Karnataka
               </p>
             </div>
           </div>
