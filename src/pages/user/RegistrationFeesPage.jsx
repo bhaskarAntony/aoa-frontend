@@ -145,10 +145,10 @@ const RegistrationFeesPage = () => {
             For Registration Related Query
           </h2>
           <div className="text-white space-y-1">
-            <p className="font-semibold text-slate-900">Mr. Rohit Kamra</p>
+            <p className="font-semibold text-slate-900"> SRS Events and Production</p>
             <p className="flex items-center gap-2">
               <Phone className="w-3.5 h-3.5 text-slate-600" />
-              Mobile: +91 98189 65679
+              Mobile: +91 9880739285
             </p>
             <p className="flex items-center gap-2">
               <Mail className="w-3.5 h-3.5 text-slate-600" />
