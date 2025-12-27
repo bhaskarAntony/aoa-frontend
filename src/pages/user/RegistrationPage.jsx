@@ -22,10 +22,10 @@ import Header from '../../components/common/Header';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
 
 const WORKSHOPS = [
-  { id: 'labour-analgesia', name: 'Labour Analgesia (1 day)', leads: 'Dr Bharath & team' },
-  { id: 'critical-incidents', name: 'Critical Incidents in Obstetric Anaesthesia (1 day)', leads: 'Dr Sandhya & team' },
-  { id: 'pocus', name: 'POCUS in Obstetric Anaesthesia (1 day)', leads: 'Dr Praveen Kumar & team' },
-  { id: 'maternal-collapse', name: 'Maternal Collapse & Resuscitation / Obstetric RA Blocks (1 day)', leads: 'Dr Vikram & team' },
+  { id: 'labour-analgesia', name: 'Labour Analgesia', leads: 'Dr Bharath & team' },
+  { id: 'critical-incidents', name: 'Critical Incidents in Obstetric Anaesthesia', leads: 'Dr Sandhya & team' },
+  { id: 'pocus', name: 'POCUS in Obstetric Anaesthesia', leads: 'Dr Praveen Kumar & team' },
+  { id: 'maternal-collapse', name: 'Maternal Collapse & Resuscitation / Obstetric RA Blocks', leads: 'Dr Vikram & team' },
 ];
 
 const RegistrationPage = () => {
@@ -513,7 +513,6 @@ const RegistrationPage = () => {
                           />
                           <div>
                             <p className="font-medium text-slate-900">{workshop.name}</p>
-                            <p className="text-[11px] text-slate-600 mt-0.5">{workshop.leads}</p>
                           </div>
                         </div>
                       </label>

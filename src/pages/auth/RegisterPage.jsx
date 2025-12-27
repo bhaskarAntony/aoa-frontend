@@ -181,7 +181,6 @@ const RegisterPage = () => {
                       <User className="w-5 h-5 text-[#9c3253]" />
                     </div>
                     <h3 className="font-semibold text-xs text-slate-900 text-center mb-1">Non-AOA</h3>
-                    <p className="text-xs text-slate-500 text-center">Other professionals</p>
                     {selectedRole === USER_ROLES.NON_AOA && (
                       <div className="mt-2 w-full h-1 bg-[#9c3253]" />
                     )}
@@ -199,8 +198,7 @@ const RegisterPage = () => {
                     <div className="w-10 h-10 mx-auto mb-2 bg-[#9c3253]/10 border border-[#9c3253]/30 flex items-center justify-center">
                       <User className="w-5 h-5 text-[#9c3253]" />
                     </div>
-                    <h3 className="font-semibold text-xs text-slate-900 text-center mb-1">PGS & Fellows</h3>
-                    <p className="text-xs text-slate-500 text-center">Postgraduate students</p>
+                    <h3 className="font-semibold text-xs text-slate-900 text-center mb-1">Postgraduate Students & Fellows</h3>
                     {selectedRole === USER_ROLES.PGS && (
                       <div className="mt-2 w-full h-1 bg-[#9c3253]" />
                     )}
